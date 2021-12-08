@@ -1,0 +1,9 @@
+.outerselect {
+    margin: "2rem";
+}
+
+.innerselect {
+    font-size: "1.2rem"; 
+    margin-left: "44%"; 
+    padding: "0 2rem";
+}

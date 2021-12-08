@@ -5,12 +5,13 @@ import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 //import Image from 'next/image'
 import React, { useState } from "react";
+import axios from 'axios';
 
 
 
 export async function getStaticProps() {
-  const res = await fetch("https://dog.ceo/api/breeds/image/random");
-  const data = await res.json();
+  const res = await axios("https://dog.ceo/api/breeds/image/random");
+  const { data } = res;
   return {
     props: {dogs: data}
   }
